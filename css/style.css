@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
   font-family: Open Sans;
+  font-weight: normal;
 }
 
 .container {
@@ -84,24 +91,238 @@ a {
 }
 
 .hero {
-  background-image: url(../img/hero.jpg);
-  height: 550px;
+  background: url(../img/image9.jpg) no-repeat top;
+  /* height: 550px; */
+  padding-top: 196px;
+  padding-bottom: 293px;
 }
 
-.hero-block {}
+.hero-block {
+  max-width: 389px;
+  width: 100%;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 .hero-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
-  color: #FFFFFF;
+  color: #ffffff;
+  margin-bottom: 26px;
 }
 
-.btn {
-  display: inline-block;
+.bth {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btn-hero {
+  /* display: inline-block;
   width: 207px;
-  height: 44px;
+  height: 44px; */
   padding: 12px 14px 13px 15px;
   border-radius: 3px;
   background-color: #fff;
+  border: 1px solid #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.health {
+  padding-top: 173px;
+  padding-bottom: 116px;
+}
+
+.health-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 86%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.health-list .item:not(:last-child) {
+  margin-right: 49px;
+}
+
+.health-list .item {
+  flex-basis: 20%;
+}
+
+.health-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #000000;
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto 71px;
+}
+
+.health-absac {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.health-text {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #787878;
+}
+
+.health-list .item:nth-child(1)::before {
+  content: "";
+  display: block;
+  height: 60px;
+  margin-bottom: 26px;
+  background-image: url(../img/pone.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.health-list .item:nth-child(2)::before {
+  content: "";
+  display: block;
+  height: 60px;
+  margin-bottom: 26px;
+  background-position: center;
+  background-image: url(../img/ptwo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.health-list .item:nth-child(3)::before {
+  content: "";
+  display: block;
+  height: 60px;
+  margin-bottom: 26px;
+  background-image: url(../img/pthree.png);
+  background-position: 66px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.health-list .item:nth-child(4)::before {
+  content: "";
+  display: block;
+  height: 60px;
+  margin-bottom: 26px;
+  background-image: url(../img/pfour.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*  */
+/* Programm */
+/*  */
+.programm-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.programm-element {
+  flex-basis: 47%;
+}
+
+.programm-element img {
+  display: block;
+  width: 100%;
+}
+
+.programm-element:first-child {
+  flex-basis: 49%;
+  padding-left: 20px;
+}
+
+.programm-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.programm-text {
+  font-size: 18px;
+  line-height: 25px;
+  color: #424242;
+  margin: 24px 0 32px;
+}
+
+.programm-btn {
+  padding: 18px 22px;
+  color: #fff;
+  background: #595959;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/*  */
+/*  Teachers*/
+/*  */
+.teachers {
+  padding-top: 129px;
+  padding-bottom: 89px;
+}
+
+.teachers-wrapper {
+  padding: 0 45px;
+}
+
+.teachers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #000000;
+}
+
+.teachers-text {
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #424242;
+  margin: 31px 0 92px;
+}
+
+.teachers-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teachers-list .item:not(:last-child) {
+  margin-right: 48px;
+}
+
+.teachers-name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  margin-top: 23px;
 }
